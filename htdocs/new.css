@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.card1{
+  position: absolute;
+  transform: translate(-50%, -20%);
+  background-image: url(images/spiderman.jpg);
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  top: 150px;
+  left: 300px;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/marvel.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+.navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 50px;
+  cursor: pointer;
+}
+.menu-icon{
+  width: 30px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.supbox{
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  right: 300px;
+  top: 300px;
+  
+}
+

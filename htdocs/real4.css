@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Yatay scroll bar'ı kaldır */
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.content {
+    padding-top: 200px; /* Üst boşluk */
+    text-align: center;
+}
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/marvel.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1; /* İçeriklerin önünde olması için */
+}
+.content {
+    padding: 1% 0;
+    /* Diğer stillendirmeler */
+}
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    margin-top: 150px;
+}
+
+.col {
+    flex-basis: 50%;
+}
+.card1{
+    position: absolute;
+    transform: translate(-50%, -20%);
+    background-image: url(images/gameofthrones.jpg);
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    top: 300px;
+    left: 350px;
+  }
+.left-line, .right-line {
+    position: fixed;
+    top: 200px; /* Üst boşluk */
+    bottom: 0;
+    width: 100px; /* Çubuk genişliği */
+    z-index: 1; /* Üstte olmasını sağlar */
+}
+.left-line {
+    left: 0;
+    border-left: 5px solid black; /* Sol çubuk */
+    margin-left: 200px;
+}
+.right-line {
+    right: 0;
+    border-right: 5px solid black; /* Sağ çubuk */
+    margin-right: 200px;
+}
+.left-line1, .right-line1 {
+    position: absolute;
+    top: 200px; /* Üst boşluk */
+    bottom: 0;
+    width: 100px; /* Çubuk genişliği */
+    z-index: 1; /* Üstte olmasını sağlar */
+}
+.left-line1 {
+    left: 0;
+    border-left: 5px solid black; /* Sol çubuk */
+    margin-left: 200px;
+}
+.right-line1 {
+    right: 0;
+    border-right: 5px solid black; /* Sağ çubuk */
+    margin-right: 200px;
+}
+.top-line {
+    top: 200px; /* Üst boşluk */
+    left: 200px; /* Sol çubuk genişliği kadar sağa kaydır */
+    right: 200px; /* Sağ çubuk genişliği kadar sola kaydır */
+    border-top: 5px solid black; /* Üst çubuk */
+    margin-top: 135px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.supbox{
+    position: absolute;
+    width: 1118px;
+    height: 3000px;
+    background-color: antiquewhite;
+    right: 200px;
+    top: 200px;
+    left: 200px;
+}
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    text-align: left;
+    margin-top: 0px;
+}
+h1{
+    position: absolute;
+    top: 230px;
+    left: 650px;
+}

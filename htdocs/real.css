@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Yatay scroll bar'ı kaldır */
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.content {
+    padding-top: 200px; /* Üst boşluk */
+    text-align: center;
+}
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/marvel.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1; /* İçeriklerin önünde olması için */
+}
+.content {
+    padding: 1% 0;
+    /* Diğer stillendirmeler */
+}
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.row {
+    display: flex;
+    height: 88%;
+    margin-top: 150px;
+}
+.col {
+    flex-basis: 50%;
+}
+.card1{
+    position: absolute;
+    transform: translate(-50%, -20%);
+    background-image: url(images/spiderman.jpg);
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    top: 400px;
+    left: 350px;
+  }
+
+.supbox{
+    position: absolute;
+    width: 1118px;
+    height: 1300px;
+    background-color: antiquewhite;
+    right: 200px;
+    top: 200px;
+    left: 200px;
+    border: black solid 5px;
+}
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    text-align: left;
+    margin-top: 0px;
+}
+h1{
+    position: absolute;
+    top: 230px;
+    left: 650px;
+}
+.wrapper{
+    background: white;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-left: 390px; 
+    margin-top: 200px;
+}
+.wrapper .form input {
+    background: #222222;
+    color: white;
+    font-size: 15px;
+    width: 450px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.wrapper .form textarea {
+    background: #222222;
+    color: white;
+    font-size: 15px;
+    width: 450px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.wrapper .form .btn {
+    background: #222222;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    transition: 0.3s all ease;
+}
+.wrapper .form .btn:hover {
+    opacity: 1;
+}
+.content1 {
+    text-align: center;
+    background: antiquewhite;
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+    width: 500px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: 390px;
+
+}
+.content1 p {
+    margin-bottom: 15px;
+    width: 450px;
+}
